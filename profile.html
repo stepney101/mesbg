@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MESBG Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'EB Garamond', serif;
+      background: #f4f0e5;
+      margin: 2rem;
+      color: #3a1c1c;
+    }
+
+    .card {
+      max-width: 800px;
+      border: 20px solid #b79f75;
+      padding: 1rem 2rem;
+      background: #fff8f0;
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .faction-header {
+      background: #7c1f1f;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+.faction-header-2 {
+  background: #7c1f1f;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 -2rem 1rem -2rem; /* Cancels out the .card horizontal padding */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+    
+    .title-line {
+      font-size: 1.6rem;
+      font-weight: bold;
+      border-bottom: 1px solid #999;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1rem;
+      color: #7c1f1f;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 0.5rem;
+      text-align: center;
+      margin-bottom: 0.3rem;
+    }
+
+    .stats-labels {
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .traits {
+      display: flex;
+      gap: 1rem;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .section {
+      margin-top: 1rem;
+    }
+
+    .section b {
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.25rem;
+      color: #7c1f1f;
+    }
+
+    .stat-block {
+      display: flex;
+      gap: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .stat-block span {
+      display: inline-block;
+      width: 80px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-top: 1rem;
+      color: #555;
+    }
+
+    .base-size {
+      position: absolute;
+      right: 2rem;
+      top: 2.6rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .points {
+      color: #7c1f1f;
+      font-weight: bold;
+    }
+
+        .compass {
+      display: grid;
+      grid-template-columns: repeat(3, 60px);
+      grid-template-rows: repeat(3, 60px);
+      gap: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #3a1c1c;
+    }
+
+    .compass div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #b79f75;
+      background: #fff8f0;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .center {
+      font-weight: bold;
+      font-size: 1.2rem;
+      background-color: #b79f75;
+      color: white;
+    }
+
+    /* Active‑status pill */
+    .status-active {
+      background-color: #7c1f1f;
+      color: #fff;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 2px;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.9rem;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+
+    }
+    .status-passive {
+      background-color: #b59152;
+      color: #fff;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 2px;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.9rem;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+
+    }
+
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="faction-header-2">Gyptian Expedition</div>
+  
+<div class="section">
+  <b>Army Composition</b>
+  <div style="display: grid; grid-template-columns: 1fr auto; row-gap: 0.4rem; column-gap: 1rem; margin-top: 0.5rem; font-size: 1rem;">
+    
+    <!-- Heroes of Legend -->
+    <div style="grid-column: span 2; font-weight: bold; color: #7c1f1f; margin-top: 0.5rem;">HEROES OF LEGEND</div>
+    <div>John Faa</div><div class="points">100 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak</div><div class="points">5 pts</div>
+
+    <!-- Heroes of Valour -->
+    <div style="grid-column: span 2; font-weight: bold; color: #7c1f1f; margin-top: 0.7rem;">HEROES OF VALOUR</div>
+    <div>Farder Coram</div><div class="points">55 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak</div><div class="points">5 pts</div>
+
+
+    <!-- Heroes of Fortitude -->
+    <div style="grid-column: span 2; font-weight: bold; color: #7c1f1f; margin-top: 0.7rem;">HEROES OF FORTITUDE</div>
+    <div>Ma Costa</div><div class="points">55 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak</div><div class="points">5 pts</div>
+
+
+        <!-- Minor Heroes -->
+    <div style="grid-column: span 2; font-weight: bold; color: #7c1f1f; margin-top: 0.7rem;">MINOR HEROES</div>
+    <div>Lee Scoresby</div><div class="points">80 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak</div><div class="points">5 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; The Balloon</div><div class="points">120 pts</div>
+
+        <!-- Independent Heroes -->
+    <div style="grid-column: span 2; font-weight: bold; color: #7c1f1f; margin-top: 0.7rem;">INDEPENDENT HEROES</div>
+    <div>Lyra Belacqua</div><div class="points">90 pts</div>
+    <div>Iorek Byrnison</div><div class="points">100 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Panserbjørn Armour</div><div class="points">50 pts</div>
+
+        <!-- Warriors -->
+    <div style="grid-column: span 2; font-weight: bold; color: #7c1f1f; margin-top: 0.7rem;">WARRIORS</div>
+    <div>Gyptian Militia</div><div class="points">5 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Spear</div><div class="points">1 pt</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak</div><div class="points">1 pt</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak and Spear</div><div class="points">2 pts</div>
+    <div style="padding-left: 1rem; color: #555;">&bull; Heavy Cloak and Pistol</div><div class="points">2 pts</div>
+
+
+  </div>
+</div>
+
+<br>
+<hr>
+  <div class="section">
+    <b>Additional Rules</b>
+    <li>A <strong>Gyptian Expedition</strong> force may only include Lee Scoresby and Iorek Byrnison if the army also includes Lyra Belacqua.</li>
+  </div>
+<br>
+<hr>
+  <div class="section">
+    <b>Special Rules</b>
+    <strong>Strength in Unity</strong><br>
+    <strong>Gyptian warrior</strong> models treat friendly <strong>Gyptian hero</strong> models as banners.
+   <br> 
+   <br>
+<strong>“We will bring our children home!”</strong><br>
+   All <strong>Gyptian</strong> models gain <strong>Hatred (Magisterium)</strong>
+    <br> 
+   <br>
+<strong>"I would enlist the services of an Armoured Bear."</strong><br>
+   If Iorek Byrnison is included in a <Strong>Gyptian Expedition</Strong> army, all friendly models gain a +1 bonus to their Courage.<br>
+   Additionally, if a <strong>Gyptian warrior</strong> model is within 6" of Iorek, they gain a +1 bonus to their Fight Value.
+  </div>
+
+</div>
+<br>
+
+<!--JOHN FAA-->
+ <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      JOHN FAA <span class="points">................100 POINTS</span>
+    </div>
+
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>6"</div><div>5</div><div>4+</div><div>4</div><div>4</div><div>2</div><div>3</div><div>5+</div><div>5+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 3</span>
+      <span>Will: 2</span>
+      <span>Fate: 3</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Hand weapon.
+    </div>
+
+    <div class="section">
+      <b>Options</b>
+      <li>Heavy Cloak <span>................5 points</span></li>
+      </div>
+    <div class="section">
+      <strong>Heavy Cloak</strong>
+      <span class="status-active">Active</span>
+      <em> – The cloaks worn in the Artic are thick, thus they protect the wearer from unfriendly missiles.</em>
+    <br>
+      <br>
+      A model wearing a heavy cloak adds +1 to their Defence against missile weapons that are not <strong>Black Powder</strong> weapons.
+      It has no effect to their Defence in Combat.
+</div>
+
+        <div class="section">
+      <b>Heroic Actions</b>
+
+      <li>Heroic Defence</li>
+      <li>Heroic Strength</li>
+      <li>Heroic March</li>
+</div>
+    
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (John Faa's Dæmon), Mighty Blow</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+     - See <em>Lyra Belacqua</em>
+     <br>
+    </div>
+
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+  <br>
+
+  <!--JOHN FAA'S DAEMON-->
+  <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      JOHN FAA'S DÆMON <span class="points">................0 POINTS</span>
+    </div>
+    <div class="section">
+        If your army includes John Faa, it must include John Faa's daemon. <br> John Faa's Dæmon may not be included in your army if it does not also include John Faa.
+    </div>
+<br>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>10"</div><div>3</div><div>5+</div><div>2</div><div>2</div><div>1</div><div>1</div><div>5+</div><div>3+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 0</span>
+      <span>Will: 1</span>
+      <span>Fate: 1</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Teeth and Claws.
+    </div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (John Faa), Fly</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      - See <em>Lyra Belacqua</em>
+     <br>
+      
+    </div>
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+
+<br>
+<!--FARDER CORAM-->
+ <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      FARDER CORAM <span class="points">................55 POINTS</span>
+    </div>
+
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>4"</div><div>3</div><div>4+</div><div>3</div><div>4</div><div>1</div><div>2</div><div>5+</div><div>4+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 1</span>
+      <span>Will: 3</span>
+      <span>Fate: 3</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Walking Stick (counts as a Hand weapon).
+    </div>
+
+    <div class="section">
+      <b>Options</b>
+      <li>Heavy Cloak <span>................5 points</span></li>
+      </div>
+    <div class="section">
+      <strong>Heavy Cloak</strong>
+      <span class="status-active">Active</span>
+      <em> – The cloaks worn in the Artic are thick, thus they protect the wearer from unfriendly missiles.</em>
+    <br>
+      <br>
+      - See <em>John Faa</em>
+</div>
+
+        <div class="section">
+      <b>Heroic Actions</b>
+
+      <li>Heroic Defence</li>
+</div>
+    
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Sophonax), Ancient Wisdom, Frail</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+     - See <em>Lyra Belacqua</em>
+     <br>
+           <br>
+      <strong>Ancient Wisdom</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+     During his activation, Farder Coram may expend a Will point to grant one <Strong>Gyptian</Strong> model within 6" of him one of the following bonuses:
+     <li>The model may reroll one D6 when making their Duel roll.</li>
+     <li>The model may roll 3D6 when taking their next courage test and discard the lowest value.</li>
+     <li>If the model is a <Strong>Hero</Strong> model, their Stand Fast! will have a range of 12" this turn, rather than the usual six.</li>
+      <br>
+      <strong>Frail</strong>
+      <span class="status-passive">Passive</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      Farder Coram may not take part in Heroic Marches called by other heroes.
+      <br>
+      Additionally, if he is knocked prone and wishes to stand up, instead of standing automatically, roll a D6 - on a 5+ he may stand up and on a 1-4 he remains Prone.
+    </div>
+
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+  <br>
+
+    <!--SOPHONAX-->
+  <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      SOPHONAX <span class="points">................0 POINTS</span>
+    </div>
+    <div class="section">
+        If your army includes Farder Coram, it must include Sophonax. <br> Sophonax may not be included in your army if it does not also include Farder Coram.
+    </div>
+<br>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>6"</div><div>3</div><div>5+</div><div>4</div><div>3</div><div>1</div><div>2</div><div>5+</div><div>3+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 0</span>
+      <span>Will: 1</span>
+      <span>Fate: 1</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Dæmon</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Teeth and Claws.
+    </div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Farder Coram), Stalk Unseen</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      - See <em>Lyra Belacqua</em>
+     <br>
+      
+    </div>
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+
+  <br>
+
+  <!--MA COSTA-->
+ <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      MA COSTA <span class="points">................55 POINTS</span>
+    </div>
+
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>6"</div><div>4</div><div>4+</div><div>3</div><div>4</div><div>2</div><div>2</div><div>5+</div><div>6+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 1</span>
+      <span>Will: 2</span>
+      <span>Fate: 2</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Hand Weapon.
+    </div>
+
+    <div class="section">
+      <b>Options</b>
+      <li>Heavy Cloak <span>................5 points</span></li>
+      </div>
+    <div class="section">
+      <strong>Heavy Cloak</strong>
+      <span class="status-active">Active</span>
+      <em> – The cloaks worn in the Artic are thick, thus they protect the wearer from unfriendly missiles.</em>
+    <br>
+      <br>
+      - See <em>John Faa</em>
+</div>
+
+        <div class="section">
+      <b>Heroic Actions</b>
+
+      <li>Heroic March</li>
+      <li>Heroic Defence</li>
+      <li>Heroic Resolve</li>
+</div>
+    
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Ma Costa's Daemon), Mother's Fury</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+      <br>
+      <br>
+     - See <em>Lyra Belacqua</em>
+     <br>
+           <br>
+      <strong>Mother's Fury</strong>
+      <span class="status-active">Active</span>
+      <br>
+      <br>
+     When a friendly Gyptian model within 3" of Ma Costa is slain, she may choose to gain +1 Strength and +1 Attack. This bonus stacks up to a maximum of +2 Strength and +2 Attacks. Each set of bonuses gained this way reduces her Courage by 1.
+    </div>
+
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+  <br>
+
+    <!--Ma Costa's Daemon-->
+  <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      MA COSTA'S DÆMON <span class="points">................0 POINTS</span>
+    </div>
+    <div class="section">
+        If your army includes Ma Costa, it must include Ma Costa's daemon. <br> Ma Costa's Dæmon may not be included in your army if it does not also include Ma Costa.
+    </div>
+<br>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>10"</div><div>3</div><div>5+</div><div>3</div><div>3</div><div>1</div><div>1</div><div>5+</div><div>6+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 0</span>
+      <span>Will: 1</span>
+      <span>Fate: 1</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Dæmon</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Teeth and Claws.
+    </div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Ma Costa), Fly</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      - See <em>Lyra Belacqua</em>
+     <br>
+      
+    </div>
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+
+  <br>
+
+<!--LEE SCORESBY-->
+ <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      LEE SCORESBY <span class="points">................80 POINTS</span>
+    </div>
+
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>6"</div><div>5</div><div>3+</div><div>4</div><div>4</div><div>2</div><div>2</div><div>5+</div><div>5+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 2</span>
+      <span>Will: 2</span>
+      <span>Fate: 2</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Hand weapon and Rifle.
+    </div>
+     <div class="section">
+      <strong>Rifle</strong>
+      <span class="status-active">Active</span>
+    <br>
+      <br>
+      A Rifle is a <strong>Black Powder</strong> missile weapon with a Range of 18" and Strength 4. A model may only shoot with a rifle if they did not move in the same turn.
+</div>
+
+    <div class="section">
+      <b>Options</b>
+      <li>Heavy Cloak <span>................5 points</span></li>
+      <li>The Balloon (profile below) <span>................120 points</span></li>
+      </div>
+    <div class="section">
+      <strong>Heavy Cloak</strong>
+      <span class="status-active">Active</span>
+      <em> – The cloaks worn in the Artic are thick, thus they protect the wearer from unfriendly missiles.</em>
+    <br>
+      <br>
+      - See <em>John Faa</em>
+</div>
+
+        <div class="section">
+      <b>Heroic Actions</b>
+
+      <li>Heroic Accuracy</li>
+      <li>Heroic Strength</li>
+      <li>Heroic March</li>
+</div>
+    
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Hester), Sharpshooter</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+     - See <em>Lyra Belacqua</em>
+     <br>
+     </div>
+    </div>
+<br>
+
+<!--THE BALLOON-->
+    <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      LEE SCORESBY'S BALLOON <span class="points">................120 POINTS</span>
+    </div>
+
+  <div class="section"> <b>BASKET</b>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>8"</div><div>-</div><div>-</div><div>-</div><div>8</div><div>-</div><div>4</div><div>-</div><div>-</div>
+    </div>
+    </div> 
+          <div class="section"><b>BALLOON</b>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    
+    <div class="stats">
+      <div>-</div><div>-</div><div>-</div><div>-</div><div>3</div><div>-</div><div>3</div><div>-</div><div>-</div>
+    </div>
+    </div> 
+
+    <div class="base-size">Base size: <b>UNKNOWN</b></div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Fly</strong>
+    </div>
+
+    <div class="section">
+      <strong>Balloon Drift</strong>
+      <span class="status-passive">Passive</span>
+    <br>
+      <br>
+      At the start of each turn, while the Balloon is in the air. Roll a D8.
+      The Balloon will drift 4" in the direction rolled on the table below.
+      <br>
+      <br>
+      <div class="compass">
+    <div>1</div>
+    <div>8</div>
+    <div>2</div>
+    <div>7</div>
+    <div class="center">🎈</div>
+    <div>3</div>
+    <div>6</div>
+    <div>5</div>
+    <div>4</div>
+  </div>
+</div>
+<br>
+    <div class="section">
+      <strong>Drop Altitude</strong>
+      <span class="status-active">Active</span>
+    <br>
+      <br>
+At the start of any of Lee’s Movement phases, he may choose to land the Balloon. While grounded:
+<br><br>
+<li>Lee is placed on the battlefield as normal.</li>
+
+<li>He may move, fight, and interact with objectives.</li>
+
+<li>He may not re-enter the Balloon during this game.</li>
+<br>
+While grounded, the Balloon is considered a piece of the Terrain and has no further rules effect.</div>
+
+<div class="section">
+      <strong>Balloon and Basket</strong>
+      <span class="status-passive">Passive</span>
+    <br>
+      <br>
+      The Balloon is attached to the Basket, the two move as one model but are seperate targets for Shooting purposes.
+      <br><br>
+    When a shot successfully hits the Balloon, roll a D6.
+    <li>On a 1-2, the shot hits the Balloon.</li>
+    <li>On a 3-5, the shot hits the Basket.</li>
+    <li>On a 6, the shot hits Lee Scoresby.</li>
+  <br>
+  Models with the <strong>Sharpshooter</strong> special may choose to either shoot the Basket or the Balloon. They may not pick to target Lee however.
+  </div>
+
+  <div class="section">
+      <strong>Balloon Destroyed</strong>
+      <span class="status-passive">Passive</span>
+    <br>
+      <br>
+When the Balloon is reduced to 0 Wounds, the Basket immediately begins falling. Lee must make a Courage Test:
+
+Pass: Lee successfully cuts the basket free and makes a controlled descent. Place the Basket anywhere within 6" of its current position. The Basket becomes a Grounded model with Move 0" for the rest of the game.
+<br><br>
+Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3" of the Basket's original position. The Basket is destroyed and removed from play.      <br><br>
+  </div>
+  </div>
+</div>
+<br>
+
+   <!--HESTER-->
+  <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      HESTER <span class="points">................0 POINTS</span>
+    </div>
+    <div class="section">
+        If your army includes Lee Scoresby, it must include Hester. <br> Hester may not be included in your army if it does not also include Lee Scoresby.
+    </div>
+<br>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>8"</div><div>3</div><div>5+</div><div>2</div><div>2</div><div>1</div><div>1</div><div>5+</div><div>5+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 0</span>
+      <span>Will: 1</span>
+      <span>Fate: 1</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Dæmon</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Teeth and Claws.
+    </div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Lee Scoresby)</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      - See <em>Lyra Belacqua</em>
+     <br>
+      
+    </div>
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+
+<br>
+
+  <!--LYRA-->
+  <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      LYRA BELACQUA <span class="points">................90 POINTS</span>
+    </div>
+
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>6"</div><div>3</div><div>4+</div><div>3</div><div>3</div><div>1</div><div>2</div><div>4+</div><div>3+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 2</span>
+      <span>Will: 5</span>
+      <span>Fate: 3</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      The Alethiometer.
+    </div>
+
+    <div class="section">
+      <strong>The Alethiometer</strong>
+      <span class="status-active">Active</span>
+      <em> – One of only 6 ever made, the Alethiometer Lyra carries is worth more than any sword, its ability to tell the truth may turn the tide in any battle.</em>
+      <br>
+      <br>
+      During her activation, Lyra may choose to begin consulting the Alethiometer instead of moving or acting.
+While consulting, she may take no other actions.
+After 2 consecutive turns of uninterrupted consulting, roll a D6:
+<br>
+<br>
+<li>On a 2+, Lyra may ask her opponent a question. They must answer truthfully, though not necessarily completely.</li>
+<li>On a 1, the reading is unclear—she may try again next turn.</li>
+<br>
+If Lyra is wounded, moved, or otherwise disrupted**, the reading fails and must be restarted from scratch.
+</div>
+
+        <div class="section">
+      <b>Heroic Actions</b>
+
+      <li>Heroic Defence</li>
+      <li>Heroic Resolve</li>
+</div>
+    
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Pantalaimon)</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      A model with this special rule may not move more than 3" from the Dæmon model marked in brackets. Additionally when the model is slain, their Dæmon is removed from play.
+    If the Dæmon is slain, the model must roll a D6 at the start of each turn, on a 1-5 they may not activate.
+    When a Dæmon suffers a wound, the model also loses one. When the model loses a wound, the Dæmon also loses one.
+<br>
+    Additionally, while the model and their dæmon are within 3" of one another, both gain a +1 to their Courage value and may reroll failed fate rolls.
+<br>
+    Named dæmons will be given seperate profiles. If the model has no named dæmon, the form of their dæmon will be written in the brackets and explained in their profile.
+</div>
+
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+<br>
+
+<!--PAN-->
+<div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      PANTALAIMON <span class="points">................0 POINTS</span>
+    </div>
+    <div class="section">
+       If your army includes Lyra Belacqua, it must include Pantalaimon. <br> Pantalaimon may not be included in your army if it does not also include Lyra Belacqua.
+    </div>
+<br>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>?</div><div>2</div><div>5+</div><div>2</div><div>2</div><div>1</div><div>1</div><div>4+</div><div>3+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 0</span>
+      <span>Will: 1</span>
+      <span>Fate: 1</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Teeth and Claws.
+    </div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Dæmon Bond (Lyra Belacqua), Dæmon Form</strong>
+      <br>
+      <br>
+      <strong>Dæmon Bond (X)</strong>
+      <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+      <br>
+      <br>
+      - See <em>Lyra Belacqua</em>
+     <br>
+      <br>
+    <strong>Dæmon Form</strong>
+          <span class="status-active">Active</span>
+     <!--<em> – The bond between a Human and their Dæmon is incredibly strong, they</em> --> 
+   
+
+      <p>At the start of each turn, Pan must select one <strong>animal form</strong> from the list below to use for that turn.
+
+</p>
+
+   <li>Arctic Ermine (Mv 6") – Pan gains <strong>Stalk Unseen</strong>.</li> 
+
+<li>Wildcat (Mv 8") – Pan gains +1 Strength and causes <strong>Terror</strong>.</li> 
+
+<li>Moth (Mv 6") – Pan gains <strong>Fly</strong> and may not be targeted by any special rules, magical powers or shooting attacks. 
+    However, Pan does not count as a model when holding objectives and he may not carry light or hevay objects.</li> 
+
+<li>Pine Marten (Mv 6") – Pan gains <strong>Woodland Creature</strong> and may reroll a single dice per turn (Lyra or Pan’s choice).</li> 
+    </div>
+
+
+
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+<br>
+
+<!--IOREK-->
+ <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      IOREK BYRNISON <span class="points">................100 POINTS</span>
+    </div>
+
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>12"</div><div>7</div><div>4+</div><div>8</div><div>6</div><div>3</div><div>3</div><div>7+</div><div>3+</div>
+    </div>
+    <div class="stat-block">
+      <span>Might: 3</span>
+      <span>Will: 3</span>
+      <span>Fate: 3</span>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Panserbjørn</b></div>
+      <div>◆ Faction: <b>Svalbard Bears</b></div>
+      <div>◆ Unit Type: <b>Hero, Infantry, Monster, Unique</b></div>
+    </div>
+    <div class="base-size">Base size: <b>??mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Claws and Teeth (Hand weapons).
+    </div>
+    
+    <div class="section">
+      <b>Options</b>
+      <li>Panserbjørn Armour <span>................50 points</span></li>
+      </div>
+    <div class="section">
+      <strong>Panserbjørn Armour</strong>
+      <span class="status-passive">Passive</span>
+      <em> – A bear's armour is his soul. Forged from sky-iron it provides not only protection, but identity.</em>
+    <br>
+      <br>
+      While wearing Panserbjørn Armour, a model increases their Defence by +3. Additionally, they gain +3 to all Courage tests they make and may not be targeted by Brutal Power Attacks.
+      However, they must reduce their Move Allowance by 2".
+</div>
+
+        <div class="section">
+      <b>Heroic Actions</b>
+
+      <li>Heroic Defence</li>
+      <li>Heroic Strength</li>
+      <li>Heroic March</li>
+      <li>Heroic Challenge</li>
+</div>
+    
+    <div class="section">
+      <b>Special Rules</b>
+      <strong> Burly, Dominant (5), Fearless, Monstrous Charge, Resistant to Magic, Terror, Mountain Dweller</strong>
+     </div>
+<br>
+     <strong>"Can You Take Us There?"</strong>
+      <span class="status-active">Active</span>
+    <br>
+      <br>
+      If Iorek and Lyra Belacqua are in base contact and neither of them used any Active abilities or were engaged in combat during the previous turn, Lyra may attempt to mount Iorek using the rules for Passengers found in the main rulebook.
+      <br><br>
+      Once mounted, Lyra follows the rules for Passengers until she opts to dismount Iorek (but counts as the Rider for shooting purposes and may not make attacks in combat), again as per the rules found in the main rulebook.
+      <br><br>
+      Additionally, while mounted, both Iorek and Lyra exchange their <strong>Infantry</strong> keyword for the <strong>Cavalry</strong> keyword.
+      <br><br>
+      While Lyra is mounted, Pantalaimon is removed from the table and is considered to be riding on Lyra. If Lyra dismounts, place Pan is base contact with both her and Iorek.
+</div>
+    </div>
+<br>
+
+<!--MILITIA-->
+<div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      GYPTIAN MILITIA <span class="points">................5 POINTS</span>
+    </div>
+    <div class="section">
+        If your army includes Lyra Belacqua, it must also include Pantalaimon. Pan is always considered to be part of Lyra's warband.
+    </div>
+<br>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>6"</div><div>2</div><div>4+</div><div>3</div><div>3</div><div>1</div><div>1</div><div>6+</div><div>7+</div>
+    </div>
+
+    <div class="traits">
+      <div>◆ Race: <b>Human</b></div>
+      <div>◆ Faction: <b>The Gyptians</b></div>
+      <div>◆ Unit Type: <b>Warrior, Infantry</b></div>
+    </div>
+    <div class="base-size">Base size: <b>25mm</b></div>
+
+    <div class="section">
+      <b>Wargear</b>
+      Hand Weapon.
+    </div>
+
+    <div class="section">
+      <b>Options</b>
+    <li>Pistol and Heavy Cloak<span>................2 points</span></li>
+    <li>Spear and Heavy Cloak<span>................2 points</span></li>
+    <li>Spear<span>................1 point</span></li>
+    <li>Heavy Cloak<span>................1 point</span></li>
+    </div>
+
+    <div class="section">
+      <strong>Heavy Cloak</strong>
+      <span class="status-active">Active</span>
+      <em> – The cloaks worn in the Artic are thick, thus they protect the wearer from unfriendly missiles.</em>
+    <br>
+      <br>
+      - See <em>John Faa</em>
+</div>
+
+    <div class="section">
+      <strong>Pistol</strong>
+      <span class="status-active">Active</span>
+    
+    <br>
+      <br>
+      This is a <strong>Black Powder</strong> missile weapon, with a Range of 6" and Strength 4. 
+      <br>
+      Additionally, a model armed with a pistol does not suffer the penalty for moving and shooting, however they may still only move half their move allowance and shoot.
+</div>
+
+
+
+    <div class="quote">
+      Fluff text TBA...
+    </div>
+  </div>
+</body>
+</html>
