@@ -19,6 +19,7 @@
       background: #fff8f0;
       box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
       position: relative;
+      margin-bottom: 2rem;
     }
 
     .faction-header {
@@ -32,18 +33,17 @@
       width: fit-content;
     }
 
-.faction-header-2 {
-  background: #7c1f1f;
-  color: white;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0 -2rem 1rem -2rem; /* Cancels out the .card horizontal padding */
-  text-transform: uppercase;
-  text-align: center;
-}
+    .faction-header-2 {
+      background: #7c1f1f;
+      color: white;
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 -2rem 1rem -2rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
 
-    
     .title-line {
       font-size: 1.6rem;
       font-weight: bold;
@@ -72,6 +72,7 @@
       gap: 1rem;
       margin: 0.5rem 0;
       font-size: 0.9rem;
+      flex-wrap: wrap;
     }
 
     .section {
@@ -96,12 +97,6 @@
       width: 80px;
     }
 
-    .quote {
-      font-style: italic;
-      margin-top: 1rem;
-      color: #555;
-    }
-
     .base-size {
       position: absolute;
       right: 2rem;
@@ -115,7 +110,7 @@
       font-weight: bold;
     }
 
-        .compass {
+     .compass {
       display: grid;
       grid-template-columns: repeat(3, 60px);
       grid-template-rows: repeat(3, 60px);
@@ -142,7 +137,6 @@
       color: white;
     }
 
-    /* Active‑status pill */
     .status-active {
       background-color: #7c1f1f;
       color: #fff;
@@ -155,8 +149,8 @@
       vertical-align: middle;
       text-transform: uppercase;
       margin-left: 0.5rem;
-
     }
+
     .status-passive {
       background-color: #b59152;
       color: #fff;
@@ -169,9 +163,20 @@
       vertical-align: middle;
       text-transform: uppercase;
       margin-left: 0.5rem;
-
     }
 
+    .subprofile {
+      border: 1px solid #b79f75;
+      background: #fefcf9;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .subprofile .title-line {
+      font-size: 1.3rem;
+      color: #5b2a2a;
+    }
   </style>
 </head>
 <body>
@@ -482,15 +487,10 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
 
     </div>
 
-
-  </div>
-  <br>
-
-  <!--JOHN FAA'S DAEMON-->
-  <div class="card">
-    <div class="faction-header">The Gyptians</div>
+<!--JOHN FAA'S DAEMON-->
+  <div class="subprofile">
     <div class="title-line">
-      JOHN FAA'S DÆMON <span class="points">................0 POINTS</span>
+      JOHN FAA'S DÆMON
     </div>
     <div class="section">
         If your army includes John Faa, it must include John Faa's daemon. <br> John Faa's Dæmon may not be included in your army if it does not also include John Faa.
@@ -530,6 +530,10 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
 
   </div>
 
+  </div>
+  <br>
+
+  
 <br>
 <!--FARDER CORAM-->
  <div class="card">
@@ -579,16 +583,11 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
       <strong>Dæmon Bond (Sophonax), Ancient Wisdom, Frail</strong>
 
     </div>
-
-
-  </div>
-  <br>
-
+   
     <!--SOPHONAX-->
-  <div class="card">
-    <div class="faction-header">The Gyptians</div>
+  <div class="subprofile">
     <div class="title-line">
-      SOPHONAX <span class="points">................0 POINTS</span>
+      SOPHONAX 
     </div>
     <div class="section">
         If your army includes Farder Coram, it must include Sophonax. <br> Sophonax may not be included in your army if it does not also include Farder Coram.
@@ -627,6 +626,9 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
     </div>
 
   </div>
+
+  </div>
+  <br>
 
   <br>
 
@@ -680,15 +682,10 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
       <strong>Dæmon Bond (Ma Costa's Daemon), Mother's Fury</strong>
       </div>
 
-
-  </div>
-  <br>
-
     <!--Ma Costa's Daemon-->
-  <div class="card">
-    <div class="faction-header">The Gyptians</div>
+  <div class="subprofile">
     <div class="title-line">
-      MA COSTA'S DÆMON <span class="points">................0 POINTS</span>
+      MA COSTA'S DÆMON 
     </div>
     <div class="section">
         If your army includes Ma Costa, it must include Ma Costa's daemon. <br> Ma Costa's Dæmon may not be included in your army if it does not also include Ma Costa.
@@ -726,6 +723,11 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
     </div>
 
   </div>
+
+  </div>
+  <br>
+
+
 
   <br>
 
@@ -779,49 +781,11 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
       <strong>Dæmon Bond (Hester), Sharpshooter</strong>
 
      </div>
-    </div>
-<br>
 
-<!--THE BALLOON-->
-    <div class="card">
-    <div class="faction-header">The Gyptians</div>
+        <!--HESTER-->
+  <div class="subprofile">
     <div class="title-line">
-      LEE SCORESBY'S BALLOON <span class="points">................120 POINTS</span>
-    </div>
-
-  <div class="section"> <b>BASKET</b>
-    <div class="stats stats-labels">
-      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
-    </div>
-    <div class="stats">
-      <div>8"</div><div>-</div><div>-</div><div>-</div><div>8</div><div>-</div><div>4</div><div>-</div><div>-</div>
-    </div>
-    </div> 
-          <div class="section"><b>BALLOON</b>
-    <div class="stats stats-labels">
-      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
-    </div>
-    
-    <div class="stats">
-      <div>-</div><div>-</div><div>-</div><div>-</div><div>3</div><div>-</div><div>3</div><div>-</div><div>-</div>
-    </div>
-    </div> 
-
-    <div class="base-size">Base size: <b>UNKNOWN</b></div>
-
-    <div class="section">
-      <b>Special Rules</b>
-      <strong>Fly, Balloon Drift, Drop Altitude, Balloon and Basket, Balloon Destroyed</strong>
-    </div>
-</div>
-   
-<br>
-
-   <!--HESTER-->
-  <div class="card">
-    <div class="faction-header">The Gyptians</div>
-    <div class="title-line">
-      HESTER <span class="points">................0 POINTS</span>
+      HESTER 
     </div>
     <div class="section">
         If your army includes Lee Scoresby, it must include Hester. <br> Hester may not be included in your army if it does not also include Lee Scoresby.
@@ -860,6 +824,45 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
     </div>
 
   </div>
+    </div>
+<br>
+
+<!--THE BALLOON-->
+    <div class="card">
+    <div class="faction-header">The Gyptians</div>
+    <div class="title-line">
+      LEE SCORESBY'S BALLOON <span class="points">................120 POINTS</span>
+    </div>
+
+  <div class="section"> <b>BASKET</b>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    <div class="stats">
+      <div>8"</div><div>-</div><div>-</div><div>-</div><div>8</div><div>-</div><div>4</div><div>-</div><div>-</div>
+    </div>
+    </div> 
+          <div class="section"><b>BALLOON</b>
+    <div class="stats stats-labels">
+      <div>Mv</div><div>Fv</div><div>Sv</div><div>S</div><div>D</div><div>A</div><div>W</div><div>C</div><div>I</div>
+    </div>
+    
+    <div class="stats">
+      <div>-</div><div>-</div><div>-</div><div>-</div><div>3</div><div>-</div><div>3</div><div>-</div><div>-</div>
+    </div>
+    </div> 
+
+    <div class="base-size">Base size: <b>UNKNOWN</b></div>
+
+    <div class="section">
+      <b>Special Rules</b>
+      <strong>Fly, Balloon Drift, Drop Altitude, Balloon and Basket, Balloon Destroyed</strong>
+    </div>
+</div>
+   
+<br>
+
+
 
 <br>
 
@@ -894,23 +897,6 @@ Fail: The Basket crashes. Lee suffers D3 Strength 5 hits and is placed within 3"
       The Alethiometer.
     </div>
 
-    <div class="section">
-      <strong>The Alethiometer</strong>
-      <span class="status-active">Active</span>
-      <em> – One of only 6 ever made, the Alethiometer Lyra carries is worth more than any sword, its ability to tell the truth may turn the tide in any battle.</em>
-      <br>
-      <br>
-      During her activation, Lyra may choose to begin consulting the Alethiometer instead of moving or acting.
-While consulting, she may take no other actions.
-After 2 consecutive turns of uninterrupted consulting, roll a D6:
-<br>
-<br>
-<li>On a 2+, Lyra may ask her opponent a question. They must answer truthfully, though not necessarily completely.</li>
-<li>On a 1, the reading is unclear—she may try again next turn.</li>
-<br>
-If Lyra is wounded, moved, or otherwise disrupted**, the reading fails and must be restarted from scratch.
-</div>
-
         <div class="section">
       <b>Heroic Actions</b>
 
@@ -926,14 +912,12 @@ If Lyra is wounded, moved, or otherwise disrupted**, the reading fails and must 
 </div>
 
 
-  </div>
 <br>
 
 <!--PAN-->
-<div class="card">
-    <div class="faction-header">The Gyptians</div>
+<div class="subprofile">
     <div class="title-line">
-      PANTALAIMON <span class="points">................0 POINTS</span>
+      PANTALAIMON 
     </div>
     <div class="section">
        If your army includes Lyra Belacqua, it must include Pantalaimon. <br> Pantalaimon may not be included in your army if it does not also include Lyra Belacqua.
@@ -967,6 +951,7 @@ If Lyra is wounded, moved, or otherwise disrupted**, the reading fails and must 
       <b>Special Rules</b>
       <strong>Dæmon Bond (Lyra Belacqua), Dæmon Form</strong>
     </div>
+  </div>
 
 
 
